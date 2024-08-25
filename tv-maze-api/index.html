@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Maze API | Shubham Vandara</title>
+    <link rel="icon" href="https://i.ibb.co/mBqpwhV/sv-circle-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Heading -->
+    <div class="main-container">
+      <h1>TV Maze API</h1>
+      <!-- Description of the project -->
+      <p>
+        This project allows users to search for TV shows using the TV Maze API.
+        Users can enter the title of a TV show in the search bar and click the
+        "Search" button. The application then retrieves information about the
+        entered TV show from the TV Maze API and displays images of the shows
+        found. It provides a simple and convenient way to explore and discover
+        TV shows of interest.
+      </p>
+    </div>
+
+    <!-- Form for searching TV show -->
+    <div class="form">
+      <form id="searchForm">
+        <input
+          id="title"
+          type="text"
+          placeholder="TV Show Title"
+          name="query"
+        />
+        <button>Search</button>
+      </form>
+    </div>
+
+    <!-- Container for displaying images -->
+    <div class="container"></div>
+
+    <!-- Script to fetch data and display images -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
