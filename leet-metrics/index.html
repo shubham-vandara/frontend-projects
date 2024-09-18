@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leet Metrics | Shubham Vandara</title>
+    <link rel="icon" href="https://i.ibb.co/mBqpwhV/sv-circle-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Leet Metrics</h1>
+
+      <div class="user-container">
+        <p>Enter your leetcode username</p>
+        <div class="user-input-container">
+          <input id="user-input" type="text" placeholder="Enter username" />
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+      <div class="stats-container">
+        <div class="progress">
+          <div class="progress-item">
+            <div class="easy-progress circle">
+              <p id="easy-label"></p>
+              <p class="easy-percentage"></p>
+              <p>Easy</p>  
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="medium-progress circle">
+              <p id="medium-label"></p>
+              <p class="medium-percentage"></p>
+              <p>Medium</p>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="hard-progress circle">
+              <p id="hard-label"></p>
+              <p class="hard-percentage"></p>
+              <p>Hard</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-card">
+          <p>Your leetcode stats show here</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

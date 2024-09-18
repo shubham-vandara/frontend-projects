@@ -1,0 +1,257 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a pleasant background color and font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    margin: 1rem 0;
+}
+
+/* Title styling */
+.container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333333;
+    font-size: 2.5rem;
+}
+
+/* User input section */
+.user-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.user-container p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555555;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#user-input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+#user-input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+#search-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #357ab8;
+}
+
+/* Stats container */
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Progress circles */
+.progress {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.progress-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 var(--progress-bar, 0%),
+            #ddd var(--progress-bar, 0%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle p {
+    position: absolute;
+    font-weight: bold;
+    color: #333333;
+}
+
+.easy-progress {
+    --progress-bar: 0%;
+    background: conic-gradient(#4caf50 var(--progress-bar, 0%), #ddd var(--progress-bar, 0%));
+}
+
+.medium-progress {
+    --progress-bar: 0%;
+    background: conic-gradient(#ff9800 var(--progress-bar, 0%), #ddd var(--progress-bar, 0%));
+}
+
+.hard-progress {
+    --progress-bar: 0%;
+    background: conic-gradient(#f44336 var(--progress-bar, 0%), #ddd var(--progress-bar, 0%));
+}
+
+.easy-label,
+.medium-label,
+.hard-label {
+    top: 35%;
+    font-size: 1rem;
+}
+
+.easy-percentage,
+.medium-percentage,
+.hard-percentage {
+    top: 55%;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.progress-item p:last-child {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Stats card */
+.stats-card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: #555555;
+    font-size: 1.1rem;
+}
+
+.stats-card p {
+    margin-bottom: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress {
+        gap: 3rem;
+    }
+
+    .progress-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle p {
+        font-size: 0.9rem;
+    }
+
+    #user-input {
+        width: 200px;
+    }
+
+    #search-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .user-input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .progress {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle p {
+        font-size: 0.8rem;
+    }
+
+    #user-input {
+        width: 100%;
+    }
+
+    #search-btn {
+        width: 100%;
+    }
+
+    .stats-card {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
