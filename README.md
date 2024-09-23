@@ -13,3 +13,4 @@ Explore a collection of dynamic and responsive frontend projects, crafted using 
 | 07  | [tv-maze-api](https://github.com/shubham-vandara/frontend-projects/tree/master/tv-maze-api)           | <a href="https://codepen.io/shubham-vandara/full/poBvvEw" target="_blank">Live Demo</a> |
 | 08  | [glassmorphism-card-ui](https://github.com/shubham-vandara/frontend-projects/tree/master/glassmorphism-card-ui) | <a href="https://codepen.io/shubham-vandara/full/BabbRNj" target="_blank">Live Demo</a> |
 | 09  | [leet-metrics](https://github.com/shubham-vandara/frontend-projects/tree/master/leet-metrics) | <a href="https://codepen.io/shubham-vandara/full/eYwwoPp">Live Demo</a> |
+| 10  | [measurement-configurator-in-javascript](https://github.com/shubham-vandara/frontend-projects/tree/master/measurement-configurator-in-javascript) | <a href="https://codepen.io/shubham-vandara/pen/poMovJa">Live Demo</a> |
